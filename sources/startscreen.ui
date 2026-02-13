@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StartScreen</class>
+ <widget class="QDialog" name="StartScreen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>175</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Добро пожаловать в мессенджер</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>messenger.png</normaloff>messenger.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>10</number>
+   </property>
+   <property name="topMargin">
+    <number>10</number>
+   </property>
+   <property name="rightMargin">
+    <number>10</number>
+   </property>
+   <property name="bottomMargin">
+    <number>10</number>
+   </property>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="LoginForm" name="loginWidget"/>
+     <widget class="RegistrationForm" name="registerWidget"/>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LoginForm</class>
+   <extends>QWidget</extends>
+   <header>loginform.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>RegistrationForm</class>
+   <extends>QWidget</extends>
+   <header>registrationform.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
